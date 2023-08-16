@@ -1,8 +1,8 @@
 // Objetos
 
-const nombreProducto = "Monitor 20 pulgadas";
-const precio = 300;
-const disponible = true;
+        // const nombreProducto = "Monitor 20 pulgadas";
+        // const precio = 300;
+        // const disponible = true;
 
 // Como crear un objeto
 
@@ -13,14 +13,22 @@ const producto = {
 }
 
 
-// console.log(producto.precio);
+// // console.log(producto.precio);
 
-// console.log(producto["precio"]);
+// // console.log(producto["precio"]);
 
-// Agregar nuevas propiedades
-producto.imagen = 'imagen.jpg';
+// // Agregar nuevas propiedades
+// producto.imagen = 'imagen.jpg';
 
-//Eliminar propiedades
-delete producto.precio;
+// //Eliminar propiedades
+// delete producto.precio;
 
-console.log(producto);
+// console.log(producto);
+
+//Destructuring
+
+const {precio} = producto;
+const {nombreProducto} = producto;
+
+console.log(precio);
+console.log(nombreProducto);
